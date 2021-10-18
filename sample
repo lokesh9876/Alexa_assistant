@@ -1,0 +1,7 @@
+from playsound import playsound
+from gtts import gTTS
+text_val=" hello python"
+language='en'
+obj=gTTS(text=text_val,lang=language,slow=false)
+obj.save("speech.mp3")
+playsound("speech.mp3")
